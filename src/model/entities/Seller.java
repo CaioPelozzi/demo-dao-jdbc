@@ -12,15 +12,13 @@ public class Seller implements Serializable {
     private String email;
     private Date birthDate;
     private Double baseSalary;
-    // Quando uma entidade depende da outra colocamos um atributo do tipo da dependencia
-    // Quando uma tabela liga a outra
     private Department department;
 
     public Seller() {
 
     }
 
-    public Seller(String name, Integer id, String email, Date birthDate, Double baseSalary, Department department) {
+    public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
         this.name = name;
         this.id = id;
         this.email = email;
